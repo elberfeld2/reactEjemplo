@@ -18,5 +18,25 @@
             "fecha":"22-11-2222",
             "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque id deserunt inventore. Deleniti corrupti tempore pariatur voluptatibus earum aspernatur."
        }
+    ],
+    "tecnologias":[
+       {
+            "nombre":"Nombre 1",
+            "donde":"Donde",
+            "fecha":"22-11-2222",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque id deserunt inventore. Deleniti corrupti tempore pariatur voluptatibus earum aspernatur."
+       },
+       {
+            "nombre":"Nombre 2",
+            "donde":"Donde",
+            "fecha":"22-11-2222",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque id deserunt inventore. Deleniti corrupti tempore pariatur voluptatibus earum aspernatur."
+       },
+       {
+            "nombre":"Nombre 3",
+            "donde":"Donde",
+            "fecha":"22-11-2222",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque id deserunt inventore. Deleniti corrupti tempore pariatur voluptatibus earum aspernatur."
+       }
     ]
 }

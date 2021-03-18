@@ -6,14 +6,17 @@ import ASocial from './componentes/ASocial';
 
 function App() {
 
-    const loadData = async ()=>{
+    const [trabajos, setTrabajos] = useState([])
+
+    const loadData = async () => {
         let response = await fetch("./data/data.json")
         let json = await response.json()
-        console.log(json);
+        setTrabajos(json.trabajos)
     }
-    useEffect( ()=>{
+
+    useEffect(() => {
         loadData()
-    },[])
+    }, [])
 
     return (
         <div>
@@ -30,9 +33,13 @@ function App() {
                 <div style={{ padding: 10, background: "white" }}>
                     <h2 style={{ textAlign: "center" }}>Experiencia</h2>
                     <div style={{ justifyContent: 'center', paddingTop: 10 }}>
-                        <Trabajo nombre="Nombre" fecha="22-12-2222" donde="Donde">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque id deserunt inventore. Deleniti corrupti tempore pariatur voluptatibus earum aspernatur.
-                        </Trabajo>
+                        {
+                            trabajos.map(t =>
+                                <Trabajo nombre={t.nombre} fecha={t.fecha} donde={t.donde}>
+                                    {t.descripcion}
+                                </Trabajo>
+                            )
+                        }
                     </div>
                 </div>
                 <div style={{ padding: 10 }}>
@@ -44,25 +51,25 @@ function App() {
                             </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
-                            </Tecnologia>                            
+                            </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
-                            </Tecnologia>                           
-                             <Tecnologia>
-                                <h2>C#</h2>
-                            </Tecnologia>                            
+                            </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
-                            </Tecnologia>                            
+                            </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
-                            </Tecnologia>                  
-                             <Tecnologia>
-                                <h2>C#</h2>
-                            </Tecnologia>                            
+                            </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
-                            </Tecnologia>                            
+                            </Tecnologia>
+                            <Tecnologia>
+                                <h2>C#</h2>
+                            </Tecnologia>
+                            <Tecnologia>
+                                <h2>C#</h2>
+                            </Tecnologia>
                             <Tecnologia>
                                 <h2>C#</h2>
                             </Tecnologia>
